@@ -1,0 +1,127 @@
+.footer {
+    background-color: var(--color-heroblack);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__contacts {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer__logo {
+ color: var(--color-white);
+}
+
+.contact-address {
+ width: 231px;
+ height: 81px;
+ margin-top: 20px;
+}
+.contact-address__list {
+ font-style: normal;
+ font-size: 14px;
+ line-height: 1.714;
+ letter-spacing: 0.03em;
+}
+.contact-address__item {
+ margin-top: 9px;
+ color: var(--color-contacts);
+}
+
+.contact-address__link {
+ text-decoration: none;
+ color: var(--color-white);
+ transition-property: color;
+ transition-duration: 2000ms;
+ transition-timing-function: var(--timing-function);
+ &:hover,
+ &:focus {
+ color: var(--color-blue);
+}
+}
+
+.contact-address__color {
+ color: var(--color-contacts);
+}
+.footer-social__title {
+ margin-bottom: 20px;
+ color: var(--color-white);
+ font-weight: 700;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.03em;
+ text-transform: uppercase;
+}
+
+.footer-social__list {
+    display: flex;
+    gap: 10px;
+}
+.footer-social__item {
+    width: 44px;
+    height: 44px;
+}
+.footer-social__link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--color-white);
+    background-color: var(--color-soc-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: var(--time);
+    transition-timing-function: var(--timing-function);
+    &:hover,
+    &:focus {
+           background-color: var(--color-blue);
+}
+}
+.footer-social__icon {
+    fill: currentColor;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.subscribe__title { 
+    margin-bottom: 20px;
+    color: var(--color-white);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.subscribe__form {
+    display: flex;
+}
+.subscribe__input {
+ width: 358px;
+ height: 50px;
+ color: var(--color-white);
+ background-color: var(--color-heroblack);
+ border: 1px solid rgba(255, 255, 255, 0.3);
+ border-radius: 4px;
+ padding-left: 16px;
+ outline: transparent;
+ transition-property: border-color;
+ transition-duration: var(--time);
+ transition-timing-function: var(--timing-function);
+ &::placeholder {
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+ &:hover,
+ &:focus {
+    border-color: var(--color-blue); 
+    }
+}
+
+.subscribe__icon {
+    margin-left: 10px;
+    fill: currentColor;
+}
