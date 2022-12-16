@@ -32,27 +32,33 @@
              <svg class="navigation-contacts__tel" width="10" height="16"> <use href="./images/icons.svg#icon-smartphone"></use> </svg> 
              +38 096 111 11 11</a></li>
         </ul> -->
-        <!-- <button type="button" class="header__button"><svg width="40" height="40"> 
+
+
+        <button type="button" class="header__button" data-menu-open ><svg width="40" height="40"> 
             <use href="./images/icons.svg#icon-header-button"></use> </svg> </button>
-        <div class="mobile-menu">
-            <button type="button" class="mobile-menu_icon"> <svg width="40" height="40"> 
+         <div class="mobile-menu is-hidden" data-menu >
+            <div class="conteiner">
+            <div class="mobile-menu__top">
+            <button type="button" class="mobile-menu__icon" data-menu-close > <svg width="40" height="40"> 
                 <use href="./images/icons.svg#icon-mobile-menu-close"></use> </svg></button>
             <ul class="mobile-menu__nav">
-                <li><a href="./index.html" class="mobile-menu__link navigation__current current">Студія</a></li>
-                <li><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
-                <li><a href="./index.html" class="mobile-menu__link">Контакти</a></li>
-            </ul>
-            <ul class="mobile-menu__contacts ">
-                <li><a href="tel:+380961111111" class="mobile-menu__contacts-link "></a>+38 096 111 11 11</a></li>
-                <li><a href="mailto:info@devstudio.com" class="mobile-menu__contacts-link"> info@devstudio.com</a></li>
+                <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link ">Студія</a></li>
+                <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a></li>
+                <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Контакти</a></li>
+            </ul></div>
+            <div class="mobile-menu__bottom">
+            <ul class="mobile-menu__nav">
+                <li class="mobile-menu__tel-item"><a href="tel:+380961111111" class="mobile-menu__tel"></a>+38 096 111 11 11</a></li>
+                <li class="mobile-menu__mail-item"><a href="mailto:info@devstudio.com" class="mobile-menu__mail"> info@devstudio.com</a></li>
             </ul>
             <ul class="header-social__list">
                 <li class="header-social__item"><a href="" class="header-social__link">instagram</a></li>
                 <li class="header-social__item"><a href="" class="header-social__link">twitter</a></li>
                 <li class="header-social__item"><a href="" class="header-social__link">facebook</a></li>
-                <li class="header-social__item"><a href="" class="header-social__link">linkedin</a></li></ul>
-        </div> -->
-        </div>
+                <li class="header-social__item"><a href="" class="header-social__link">linkedin</a></li></ul></div>
+            </div>
+        </div> 
+        </div> 
  </header>
  
  <main>
@@ -186,9 +192,9 @@
     </div>
    </section> 
  </main>
- <!-- <footer class="footer">
+  <footer class="footer">
     <div class="conteiner footer__contacts">
-       <div> <a href="./index.html" class="logo footer__logo"><span class="logo__text">Web</span>Studio</a>
+       <div class="footer__contacts-top"> <a href="./index.html" class="logo footer__logo"><span class="logo__text">Web</span>Studio</a>
           <address class="contact-address">
              <ul class="contact-address__list">
                  <li><a class="contact-address__link" href="https://goo.gl/maps/fPZPmvqRxo8YK3xt6" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
@@ -220,10 +226,10 @@
     </div>
 
  </div>
- </footer> -->
+ </footer> 
 
 
- <!-- <div class="backdrop is-hidden" data-modal> 
+  <div class="backdrop is-hidden" data-modal> 
     <div class="modal">
         <button type="button" class="modal__button-close" data-modal-close> <svg class="mod__icon" width="30" height="30"> 
          <use href="./images/icons.svg#icon-close"></use> </svg> 
@@ -272,7 +278,8 @@
             
          </form>
     </div>
-</div> -->
+</div> 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
