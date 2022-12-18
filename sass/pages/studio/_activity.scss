@@ -1,8 +1,8 @@
 .activity {
     padding-top: 0;
     @media screen and (max-width:1199px) {
-        display: none;
-}
+    display: none;
+    }
    }
    .activity__title {
     font-weight: 700;
@@ -13,9 +13,9 @@
     color: var(--color-darkgrey);
    }
    .activity__list {
-       margin-top: 50px;
-       display: flex;
-       gap: 30px;
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
    }
    .activity__image {
     width: 370px;

@@ -61,12 +61,12 @@
       background-color: var(--color-blue);
   }
   .navigation-contacts  { 
-  @media screen and (max-width:768px) {
+  @media screen and (max-width:767px) {
   display: none;   
   }
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
@@ -74,6 +74,8 @@
   @media screen and (min-width:1200px) {
   flex-direction: row;
   gap: 30px; 
+  font-size: 14px;
+  line-height: 1.14;
   }
   }
   
@@ -137,12 +139,13 @@
 .mobile-menu {
     position: fixed;
     top: 0px;
-    left: 10px;
+    left: 0px;
     width: 100vw;
     height: 100vh;
     background-color: var(--color-white);
     padding: 48px 0 48px 25px;
   > .conteiner {
+    max-width: 100vw;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -178,15 +181,10 @@ letter-spacing: 0.02em;
 color: var(--color-darkgrey);
 text-decoration: none;
   }
-// .navigation__current {
-// }
-// .current {
-// }
-// .mobile-menu__contacts {
-// }
 .mobile-menu__tel-item {
   color: var(--color-blue);
   margin-bottom: 32px;
+  font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
@@ -199,7 +197,8 @@ text-decoration: none;
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
-  color: #757575;
+  text-decoration: none;
+  color: var(--color-grey);
    }
 .header-social__list {
   display: flex;
